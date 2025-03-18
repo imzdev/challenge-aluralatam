@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono navegador -->
+    <link rel="icon" href="media/amigo_secreto.png" type="image/png">
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Estilo de pagina -->
+    <link rel="stylesheet" href="style.css">
+    <title>Amigo Secreto</title>
+</head>
+<body>
+    <main class="main-content">
+        <header class="header-banner">
+            <img  src="media/amigo_secreto.png" alt="Imagen representativa de amigo secreto">
+        </header>
+        <section class="input-section">
+            <h2 class="section-title">Ingresa datos de tus amigos</h2>
+            <div class="input-wrapper">
+                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre y apellido">
+                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+            </div>
+            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+            <div class="button-container">
+                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                    <img src="media/play_circle.png" alt="Ícono para sortear">Sortear amigo
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+    <footer class="footer">
+        <p>&copy; 2025 Amigo Secreto. Todos los derechos reservados.</p>
+        <p>Desarrollado por <a class="imzdev" href="https://github.com/imzdev" target="_blank" >imzdev</a></p>
+    </footer>
+</body>
+</html>
